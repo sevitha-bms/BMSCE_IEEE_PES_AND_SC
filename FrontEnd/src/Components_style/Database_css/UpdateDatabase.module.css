@@ -1,0 +1,126 @@
+.outer {
+  padding-top: 5.75rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section1 {
+  height: auto;
+  width: 96%;
+  margin: 0 2rem;
+}
+
+.section2 {
+  min-height: 100vh;
+  width: 96%;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#070b14, #0a1127);
+  box-shadow: 0px 7px 55px rgb(92, 101, 234);
+  height: 85vh;
+  width: 55%;
+  border: 0.5px solid var(--font-color);
+  border-radius: 0.4375rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.default {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.default button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #76b4c9;
+  background: linear-gradient(#141e30, #192f4d);
+  border: none;
+  border-radius: 40px;
+  box-shadow: -2px -2px 8px rgba(92, 101, 234, 1),
+    -2px -2px 12px rgba(92, 101, 234, 0.5),
+    inset 2px 2px 4px rgba(92, 101, 234, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.default button:hover {
+  transform: scale(0.98);
+  box-shadow: inset -2px -2px 8px rgba(92, 101, 234, 1),
+    inset -2px -2px 12px rgba(92, 101, 234, 0.5),
+    inset 2px 2px 4px rgba(92, 101, 234, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  height: 86vh;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 2.2rem; */
+}
+
+.wrapper h1 {
+  font-size: 1.25rem;
+  color: var(--font-color);
+  margin-top: -3.2rem;
+  margin-bottom: 1.8rem;
+
+}
+
+.container2 {
+  height: 84vh;
+  width: 100%;
+  background: linear-gradient(#070b14, #0a1127);
+  box-shadow: 0px 7px 55px #5c65ea;
+  border: 0.5px solid var(--font-color);
+  border-radius: 0.4375rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.item{
+  width: 90%;
+  min-height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: var(--font-color);
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.item:hover{
+  cursor: pointer;
+  background: #5c65ea;
+  height: auto;
+}

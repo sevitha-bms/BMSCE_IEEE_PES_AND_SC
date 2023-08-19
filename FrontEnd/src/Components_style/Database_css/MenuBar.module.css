@@ -1,0 +1,69 @@
+.menu {
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  box-sizing: border-box;
+  transition: all .35s ease;
+  border-bottom: 0.125rem solid white;
+  border-top: 0.125rem solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.menu li {
+  padding: .5em .8em;
+  color: #A5D7E8;
+  position: relative;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.menu li::before,
+.menu li::after {
+  content: '';
+  height: 0.875rem;
+  width: 0.875rem;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.menu li::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 0.1875rem solid #A5D7E8;
+  border-right: 0.1875rem solid #A5D7E8;
+  transform: translate(-100%, 50%);
+}
+
+.menu li:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 0.1875rem solid #A5D7E8;
+  border-left: 0.1875rem solid #A5D7E8;
+  transform: translate(100%, -50%);
+}
+
+.menu li.clicked:before,
+.menu li.clicked:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.menu li.clicked {
+  color: #A5D7E8;
+}
+
+.menu li:hover{
+  cursor: pointer;
+}

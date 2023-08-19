@@ -1,0 +1,657 @@
+.pnf_one {
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 3.7vw;
+  overflow: hidden;
+}
+
+input,
+select,
+button,
+textarea {
+  margin: 0;
+  font-size: 100%;
+}
+
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.starsec {
+  content: " ";
+  position: absolute;
+  width: 0.1875rem;
+  height: 0.1875rem;
+  background: transparent;
+  box-shadow: 35.6875rem 10.8125rem #00bcd4, 108.25rem 8.9375rem #00bcd4, 109.0625rem 28.375rem #ff5722,
+    14.625rem 49rem #00bcd4, 112.0625rem 70.1875rem #ff9800, 67.25rem 31.5rem #03a9f4,
+    39.5625rem 37.5625rem #ff5722, 21.875rem 39.375rem #ffeb3b, 72.75rem 48.875rem #00bcd4,
+    4.75rem 43.125rem #3f51b5, 114.0625rem 43.8125rem #cddc39, 102.875rem 36.125rem #ffeb3b,
+    34rem 18.3125rem #2196f3, 27.8125rem 66.3125rem #673ab7, 58rem 2.9375rem #00bcd4,
+    10.5rem 88.125rem #8bc34a, 48.5625rem 48.875rem #9c27b0, 77.1875rem 121.3125rem #9c27b0,
+    6.5rem 105.625rem #8bc34a, 72.9375rem 83.625rem #e91e63, 21.5625rem 103.25rem #009688,
+    105.125rem 74.75rem #f44336, 124.6875rem 30.875rem #8bc34a, 26.75rem 49.875rem #ff5722,
+    21.25rem 101.4375rem #f44336, 37.8125rem 21.8125rem #9c27b0, 83.6875rem 84rem #673ab7,
+    68.875rem 109.0625rem #3f51b5, 99.5rem 104.75rem #2196f3, 26.1875rem 64rem #ff9800,
+    39.375rem 64.5625rem #4caf50, 124.6875rem 102.75rem #00bcd4, 68.25rem 44.5rem #9c27b0,
+    84.6875rem 37.875rem #f44336, 38.875rem 117.5625rem #cddc39, 92.5625rem 38.8125rem #9e9e9e,
+    1.1875rem 84.25rem #8bc34a, 54rem 111.25rem #e91e63, 27.625rem 71rem #2196f3,
+    4.1875rem 44.5rem #ff5722, 5.5625rem 87.875rem #f44336, 17.1875rem 20.0625rem #009688,
+    37rem 39.375rem #e91e63, 63.25rem 105.625rem #9c27b0, 109.3125rem 1.4375rem #673ab7,
+    5.875rem 96.375rem #ffeb3b, 75.0625rem 103.5625rem #3f51b5, 94.0625rem 43.25rem #2196f3,
+    112.4375rem 37.5625rem #03a9f4, 41rem 50.6875rem #00bcd4, 43.8125rem 37.3125rem #00bcd4,
+    75.125rem 2.875rem #ff5722, 55.625rem 35.5625rem #ff5722, 100.8125rem 50.8125rem #2196f3,
+    13.9375rem 15.75rem #ff9800, 61.4375rem 68.3125rem #f44336, 45.375rem 64.3125rem #ffc107,
+    110.25rem 48.625rem #cddc39, 38.875rem 102.6875rem #f44336, 10.875rem 97.4375rem #673ab7,
+    13.25rem 32.3125rem #00bcd4, 21.25rem 31.5625rem #fff, 106.25rem 2.4375rem #fff,
+    110.5rem 32.25rem #f44336, 53.0625rem 24.4375rem #ff9800, 14.25rem 114rem #fff,
+    69.9375rem 105rem #ffc107, 50.75rem 92.5rem #3f51b5, 89.875rem 99.0625rem #cddc39,
+    8.5625rem 87.3125rem #fff, 67.5rem 28.5rem #673ab7, 75.5rem 89.8125rem #03a9f4,
+    53.5625rem 17.5625rem #f44336, 78.375rem 81.625rem #cddc39, 61.6875rem 61.875rem #4caf50,
+    103.4375rem 56.9375rem #00bcd4, 68.875rem 76rem #ff5722, 112.9375rem 65.25rem #fff,
+    41.25rem 27.1875rem #03a9f4, 18.6875rem 42.375rem #4caf50, 74.5625rem 7.1875rem #ff9800,
+    57.375rem 18.125rem #cddc39, 90.4375rem 88.875rem #ffeb3b, 5.6875rem 79.5625rem #9c27b0,
+    6.75rem 13.9375rem #ffeb3b, 9.125rem 47.125rem #00bcd4, 28.8125rem 90.375rem #ff5722,
+    62.75rem 24.4375rem #673ab7, 95.5625rem 32.25rem #f44336, 75.375rem 52.8125rem #cddc39,
+    21.6875rem 36.4375rem #009688, 68.875rem 83.25rem #f44336, 44.3125rem 109.75rem #00bcd4,
+    123.25rem 15.5rem #fff, 104.3125rem 84rem #ff5722, 70.75rem 25.375rem #f44336,
+    20rem 67.25rem #cddc39, 7.875rem 58.9375rem #ffeb3b, 16.4375rem 37.75rem #ff5722,
+    96.625rem 43.25rem #f44336;
+  animation: animStar 150s linear infinite;
+}
+
+.starthird {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 35.6875rem 10.8125rem #00bcd4, 108.25rem 8.9375rem #00bcd4, 109.0625rem 28.375rem #ff5722,
+    14.625rem 49rem #00bcd4, 112.0625rem 70.1875rem #ff9800, 67.25rem 31.5rem #03a9f4,
+    39.5625rem 37.5625rem #ff5722, 21.875rem 39.375rem #ffeb3b, 72.75rem 48.875rem #00bcd4,
+    4.75rem 43.125rem #3f51b5, 114.0625rem 43.8125rem #cddc39, 102.875rem 36.125rem #ffeb3b,
+    34rem 18.3125rem #2196f3, 27.8125rem 66.3125rem #673ab7, 58rem 2.9375rem #00bcd4,
+    10.5rem 88.125rem #8bc34a, 48.5625rem 48.875rem #9c27b0, 77.1875rem 121.3125rem #9c27b0,
+    6.5rem 105.625rem #8bc34a, 72.9375rem 83.625rem #e91e63, 21.5625rem 103.25rem #009688,
+    105.125rem 74.75rem #f44336, 124.6875rem 30.875rem #8bc34a, 26.75rem 49.875rem #ff5722,
+    21.25rem 101.4375rem #f44336, 37.8125rem 21.8125rem #9c27b0, 83.6875rem 84rem #673ab7,
+    68.875rem 109.0625rem #3f51b5, 99.5rem 104.75rem #2196f3, 26.1875rem 64rem #ff9800,
+    39.375rem 64.5625rem #4caf50, 124.6875rem 102.75rem #00bcd4, 68.25rem 44.5rem #9c27b0,
+    84.6875rem 37.875rem #f44336, 38.875rem 117.5625rem #cddc39, 92.5625rem 38.8125rem #9e9e9e,
+    1.1875rem 84.25rem #8bc34a, 54rem 111.25rem #e91e63, 27.625rem 71rem #2196f3,
+    4.1875rem 44.5rem #ff5722, 5.5625rem 87.875rem #f44336, 17.1875rem 20.0625rem #009688,
+    37rem 39.375rem #e91e63, 63.25rem 105.625rem #9c27b0, 109.3125rem 1.4375rem #673ab7,
+    5.875rem 96.375rem #ffeb3b, 75.0625rem 103.5625rem #3f51b5, 94.0625rem 43.25rem #2196f3,
+    112.4375rem 37.5625rem #03a9f4, 41rem 50.6875rem #00bcd4, 43.8125rem 37.3125rem #00bcd4,
+    75.125rem 2.875rem #ff5722, 55.625rem 35.5625rem #ff5722, 100.8125rem 50.8125rem #2196f3,
+    13.9375rem 15.75rem #ff9800, 61.4375rem 68.3125rem #f44336, 45.375rem 64.3125rem #ffc107,
+    110.25rem 48.625rem #cddc39, 38.875rem 102.6875rem #f44336, 10.875rem 97.4375rem #673ab7,
+    13.25rem 32.3125rem #00bcd4, 21.25rem 31.5625rem #fff, 106.25rem 2.4375rem #fff,
+    110.5rem 32.25rem #f44336, 53.0625rem 24.4375rem #ff9800, 14.25rem 114rem #fff,
+    69.9375rem 105rem #ffc107, 50.75rem 92.5rem #3f51b5, 89.875rem 99.0625rem #cddc39,
+    8.5625rem 87.3125rem #fff, 67.5rem 28.5rem #673ab7, 75.5rem 89.8125rem #03a9f4,
+    53.5625rem 17.5625rem #f44336, 78.375rem 81.625rem #cddc39, 61.6875rem 61.875rem #4caf50,
+    103.4375rem 56.9375rem #00bcd4, 68.875rem 76rem #ff5722, 112.9375rem 65.25rem #fff,
+    41.25rem 27.1875rem #03a9f4, 18.6875rem 42.375rem #4caf50, 74.5625rem 7.1875rem #ff9800,
+    57.375rem 18.125rem #cddc39, 90.4375rem 88.875rem #ffeb3b, 5.6875rem 79.5625rem #9c27b0,
+    6.75rem 13.9375rem #ffeb3b, 9.125rem 47.125rem #00bcd4, 28.8125rem 90.375rem #ff5722,
+    62.75rem 24.4375rem #673ab7, 95.5625rem 32.25rem #f44336, 75.375rem 52.8125rem #cddc39,
+    21.6875rem 36.4375rem #009688, 68.875rem 83.25rem #f44336, 44.3125rem 109.75rem #00bcd4,
+    123.25rem 15.5rem #fff, 104.3125rem 84rem #ff5722, 70.75rem 25.375rem #f44336,
+    20rem 67.25rem #cddc39, 7.875rem 58.9375rem #ffeb3b, 16.4375rem 37.75rem #ff5722,
+    96.625rem 43.25rem #f44336;
+  animation: animStar 10s linear infinite;
+}
+
+.starfourth {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 35.6875rem 10.8125rem #00bcd4, 108.25rem 8.9375rem #00bcd4, 109.0625rem 28.375rem #ff5722,
+    14.625rem 49rem #00bcd4, 112.0625rem 70.1875rem #ff9800, 67.25rem 31.5rem #03a9f4,
+    39.5625rem 37.5625rem #ff5722, 21.875rem 39.375rem #ffeb3b, 72.75rem 48.875rem #00bcd4,
+    4.75rem 43.125rem #3f51b5, 114.0625rem 43.8125rem #cddc39, 102.875rem 36.125rem #ffeb3b,
+    34rem 18.3125rem #2196f3, 27.8125rem 66.3125rem #673ab7, 58rem 2.9375rem #00bcd4,
+    10.5rem 88.125rem #8bc34a, 48.5625rem 48.875rem #9c27b0, 77.1875rem 121.3125rem #9c27b0,
+    6.5rem 105.625rem #8bc34a, 72.9375rem 83.625rem #e91e63, 21.5625rem 103.25rem #009688,
+    105.125rem 74.75rem #f44336, 124.6875rem 30.875rem #8bc34a, 26.75rem 49.875rem #ff5722,
+    21.25rem 101.4375rem #f44336, 37.8125rem 21.8125rem #9c27b0, 83.6875rem 84rem #673ab7,
+    68.875rem 109.0625rem #3f51b5, 99.5rem 104.75rem #2196f3, 26.1875rem 64rem #ff9800,
+    39.375rem 64.5625rem #4caf50, 124.6875rem 102.75rem #00bcd4, 68.25rem 44.5rem #9c27b0,
+    84.6875rem 37.875rem #f44336, 38.875rem 117.5625rem #cddc39, 92.5625rem 38.8125rem #9e9e9e,
+    1.1875rem 84.25rem #8bc34a, 54rem 111.25rem #e91e63, 27.625rem 71rem #2196f3,
+    4.1875rem 44.5rem #ff5722, 5.5625rem 87.875rem #f44336, 17.1875rem 20.0625rem #009688,
+    37rem 39.375rem #e91e63, 63.25rem 105.625rem #9c27b0, 109.3125rem 1.4375rem #673ab7,
+    5.875rem 96.375rem #ffeb3b, 75.0625rem 103.5625rem #3f51b5, 94.0625rem 43.25rem #2196f3,
+    112.4375rem 37.5625rem #03a9f4, 41rem 50.6875rem #00bcd4, 43.8125rem 37.3125rem #00bcd4,
+    75.125rem 2.875rem #ff5722, 55.625rem 35.5625rem #ff5722, 100.8125rem 50.8125rem #2196f3,
+    13.9375rem 15.75rem #ff9800, 61.4375rem 68.3125rem #f44336, 45.375rem 64.3125rem #ffc107,
+    110.25rem 48.625rem #cddc39, 38.875rem 102.6875rem #f44336, 10.875rem 97.4375rem #673ab7,
+    13.25rem 32.3125rem #00bcd4, 21.25rem 31.5625rem #fff, 106.25rem 2.4375rem #fff,
+    110.5rem 32.25rem #f44336, 53.0625rem 24.4375rem #ff9800, 14.25rem 114rem #fff,
+    69.9375rem 105rem #ffc107, 50.75rem 92.5rem #3f51b5, 89.875rem 99.0625rem #cddc39,
+    8.5625rem 87.3125rem #fff, 67.5rem 28.5rem #673ab7, 75.5rem 89.8125rem #03a9f4,
+    53.5625rem 17.5625rem #f44336, 78.375rem 81.625rem #cddc39, 61.6875rem 61.875rem #4caf50,
+    103.4375rem 56.9375rem #00bcd4, 68.875rem 76rem #ff5722, 112.9375rem 65.25rem #fff,
+    41.25rem 27.1875rem #03a9f4, 18.6875rem 42.375rem #4caf50, 74.5625rem 7.1875rem #ff9800,
+    57.375rem 18.125rem #cddc39, 90.4375rem 88.875rem #ffeb3b, 5.6875rem 79.5625rem #9c27b0,
+    6.75rem 13.9375rem #ffeb3b, 9.125rem 47.125rem #00bcd4, 28.8125rem 90.375rem #ff5722,
+    62.75rem 24.4375rem #673ab7, 95.5625rem 32.25rem #f44336, 75.375rem 52.8125rem #cddc39,
+    21.6875rem 36.4375rem #009688, 68.875rem 83.25rem #f44336, 44.3125rem 109.75rem #00bcd4,
+    123.25rem 15.5rem #fff, 104.3125rem 84rem #ff5722, 70.75rem 25.375rem #f44336,
+    20rem 67.25rem #cddc39, 7.875rem 58.9375rem #ffeb3b, 16.4375rem 37.75rem #ff5722,
+    96.625rem 43.25rem #f44336;
+  animation: animStar 50s linear infinite;
+}
+
+.starfifth {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 571px 173px #00bcd4, 1732px 143px #00bcd4, 1745px 454px #ff5722,
+    234px 784px #00bcd4, 1793px 1123px #ff9800, 1076px 504px #03a9f4,
+    633px 601px #ff5722, 350px 630px #ffeb3b, 1164px 782px #00bcd4,
+    76px 690px #3f51b5, 1825px 701px #cddc39, 1646px 578px #ffeb3b,
+    544px 293px #2196f3, 445px 1061px #673ab7, 928px 47px #00bcd4,
+    168px 1410px #8bc34a, 777px 782px #9c27b0, 1235px 1941px #9c27b0,
+    104px 1690px #8bc34a, 1167px 1338px #e91e63, 345px 1652px #009688,
+    1682px 1196px #f44336, 1995px 494px #8bc34a, 428px 798px #ff5722,
+    340px 1623px #f44336, 605px 349px #9c27b0, 1339px 1344px #673ab7,
+    1102px 1745px #3f51b5, 1592px 1676px #2196f3, 419px 1024px #ff9800,
+    630px 1033px #4caf50, 1995px 1644px #00bcd4, 1092px 712px #9c27b0,
+    1355px 606px #f44336, 622px 1881px #cddc39, 1481px 621px #9e9e9e,
+    19px 1348px #8bc34a, 864px 1780px #e91e63, 442px 1136px #2196f3,
+    67px 712px #ff5722, 89px 1406px #f44336, 275px 321px #009688,
+    592px 630px #e91e63, 1012px 1690px #9c27b0, 1749px 23px #673ab7,
+    94px 1542px #ffeb3b, 1201px 1657px #3f51b5, 1505px 692px #2196f3,
+    1799px 601px #03a9f4, 656px 811px #00bcd4, 701px 597px #00bcd4,
+    1202px 46px #ff5722, 890px 569px #ff5722, 1613px 813px #2196f3,
+    223px 252px #ff9800, 983px 1093px #f44336, 726px 1029px #ffc107,
+    1764px 778px #cddc39, 622px 1643px #f44336, 174px 1559px #673ab7,
+    212px 517px #00bcd4, 340px 505px #fff, 1700px 39px #fff,
+    1768px 516px #f44336, 849px 391px #ff9800, 228px 1824px #fff,
+    1119px 1680px #ffc107, 812px 1480px #3f51b5, 1438px 1585px #cddc39,
+    137px 1397px #fff, 1080px 456px #673ab7, 1208px 1437px #03a9f4,
+    857px 281px #f44336, 1254px 1306px #cddc39, 987px 990px #4caf50,
+    1655px 911px #00bcd4, 1102px 1216px #ff5722, 1807px 1044px #fff,
+    660px 435px #03a9f4, 299px 678px #4caf50, 1193px 115px #ff9800,
+    918px 290px #cddc39, 1447px 1422px #ffeb3b, 91px 1273px #9c27b0,
+    108px 223px #ffeb3b, 146px 754px #00bcd4, 461px 1446px #ff5722,
+    1004px 391px #673ab7, 1529px 516px #f44336, 1206px 845px #cddc39,
+    347px 583px #009688, 1102px 1332px #f44336, 709px 1756px #00bcd4,
+    1972px 248px #fff, 1669px 1344px #ff5722, 1132px 406px #f44336,
+    320px 1076px #cddc39, 126px 943px #ffeb3b, 263px 604px #ff5722,
+    1546px 692px #f44336;
+  animation: animStar 80s linear infinite;
+}
+
+@keyframes animStar {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(-125rem);
+  }
+}
+
+.error {
+  height: auto;
+  position: relative;
+  margin-top: 26vw;
+  width: 100vw;
+  text-align: center;
+  color: #181828;
+  padding-bottom: 10vw;
+}
+
+.message__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+  font-size: 5.8vw;
+  padding-bottom: 2.5vw;
+  margin: 0;
+}
+
+.message__text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2.7vw;
+  font-size: 2vw;
+  max-width: 74vw;
+  font-weight: 550;
+  margin: auto;
+}
+
+.lamp {
+  position: absolute;
+  left: 0rem;
+  right: 0rem;
+  top: 4.6vw;
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center top;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
+  animation: move 5.1s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(40deg);
+  }
+
+  50% {
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.cable {
+  width: 0.5rem;
+  height: 14vw;
+  background-image: linear-gradient(rgb(32 148 218 / 70%), rgb(193 65 25)),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.cover {
+  width: 17vw;
+  height: 7vw;
+  background: #0bd5e8;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: relative;
+  z-index: 200;
+}
+
+.in-cover {
+  width: 100%;
+  max-width: 16.5vw;
+  height: 7.5vw;
+  border-radius: 100%;
+  background: #08ffff;
+  position: absolute;
+  left: 0rem;
+  right: 0rem;
+  margin: 0rem auto;
+  bottom: -0.5625rem;
+  z-index: 100;
+}
+
+.in-cover .bulb {
+  width: 8vw;
+  height: 5vw;
+  background-color: #08fffa;
+  border-radius: 50%;
+  position: absolute;
+  left: 0rem;
+  right: 0rem;
+  bottom: -1.25rem;
+  margin: 0rem auto;
+  -webkit-box-shadow: 0 0 0.9375rem 0.4375rem rgba(0, 255, 255, 0.8),
+    0 0 2.5rem 1.5625rem rgba(0, 255, 255, 0.5),
+    -4.6875rem 0 1.875rem 0.9375rem rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 1.5625rem 0.4375rem rgb(127 255 255 / 80%),
+    0 0 4rem 2.9375rem rgba(0, 255, 255, 0.5), 0rem 0 1.875rem 0.9375rem rgba(0, 255, 255, 0.2);
+}
+
+.light {
+  width: 12.5rem;
+  height: 0rem;
+  border-bottom: 230vw solid rgb(44 255 255 / 24%);
+  border-left: 43vw solid transparent;
+  border-right: 43vw solid transparent;
+  position: absolute;
+  left: 0rem;
+  right: 0rem;
+  top: 16vw;
+  margin: 0rem auto;
+  z-index: 1;
+  border-radius: 5.625rem 5.625rem 0rem 0rem;
+}
+
+@media(max-width:480px) {
+  .pnf_one {
+    padding-top: 6.5vw;
+  }
+
+  .error {
+    margin-top: 100vw;
+  }
+
+  .message__title {
+    letter-spacing: 0.5vw;
+    font-size: 8.5vw;
+    padding-bottom: 0;
+  }
+
+  .message__text {
+    font-size: 4.5vw;
+    max-width: 88vw;
+    line-height: 6vw;
+  }
+
+  .lamp {
+    top: 11vw;
+  }
+
+  .cable {
+    height: 44vw;
+  }
+
+  .cover {
+    width: 40vw;
+    height: 20vw;
+  }
+
+  .in-cover {
+    max-width: 16.5vw;
+  }
+
+  .in-cover .bulb {
+    width: 18vw;
+    height: 16vw;
+  }
+
+  .light {
+    width: 40vw;
+    top: 56vw;
+    border-bottom: 186vw solid rgb(44 255 255 / 24%);
+    border-left: 8vw solid transparent;
+    border-right: 8vw solid transparent;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(25deg);
+    }
+
+    50% {
+      transform: rotate(-25deg);
+    }
+
+    100% {
+      transform: rotate(25deg);
+    }
+  }
+}
+
+@media(min-width:481px) and (max-width:768px) {
+  .pnf_one {
+    padding-top: 5.5vw;
+    padding-bottom: 15vw;
+  }
+
+  .error {
+    margin-top: 75vw;
+  }
+
+  .message__title {
+    letter-spacing: 0.5vw;
+    font-size: 8vw;
+    padding-bottom: 0;
+  }
+
+  .message__text {
+    font-size: 3.4vw;
+    max-width: 88vw;
+    line-height: 5.5vw;
+  }
+
+  .lamp {
+    top: 11vw;
+  }
+
+  .cable {
+    height: 33vw;
+  }
+
+  .cover {
+    width: 35vw;
+    height: 15vw;
+  }
+
+  .in-cover {
+    max-width: 16.5vw;
+  }
+
+  .in-cover .bulb {
+    width: 18vw;
+    height: 10vw;
+  }
+
+  .light {
+    width: 35vw;
+    top: 46vw;
+    border-bottom: 196vw solid rgb(44 255 255 / 24%);
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(28deg);
+    }
+
+    50% {
+      transform: rotate(-28deg);
+    }
+
+    100% {
+      transform: rotate(28deg);
+    }
+  }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+  .pnf_one {
+    padding-top: 2.25vw;
+    padding-bottom: 15vw;
+  }
+
+  .error {
+    margin-top: 60vw;
+  }
+
+  .message__title {
+    letter-spacing: 0.5vw;
+    font-size: 7.5vw;
+    padding-bottom: 0;
+  }
+
+  .message__text {
+    font-size: 3vw;
+    max-width: 90vw;
+    line-height: 5.5vw;
+  }
+
+  .lamp {
+    top: 8vw;
+  }
+
+  .cable {
+    height: 30vw;
+  }
+
+  .cover {
+    width: 30vw;
+    height: 12vw;
+  }
+
+  .in-cover {
+    height: 10vw;
+    max-width: 16.5vw;
+  }
+
+  .in-cover .bulb {
+    width: 18vw;
+    height: 10vw;
+  }
+
+  .light {
+    width: 30vw;
+    top: 41vw;
+    border-bottom: 210vw solid rgb(44 255 255 / 24%);
+    border-left: 13vw solid transparent;
+    border-right: 13vw solid transparent;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(30deg);
+    }
+
+    50% {
+      transform: rotate(-30deg);
+    }
+
+    100% {
+      transform: rotate(30deg);
+    }
+  }
+}
+
+@media(min-width:1025px) and (max-width:1200px) {
+  .pnf_one {
+    padding-top: 1.5vw;
+    padding-bottom: 15vw;
+  }
+
+  .error {
+    margin-top: 49vw;
+  }
+
+  .message__title {
+    letter-spacing: 0.5vw;
+    font-size: 6vw;
+    padding-bottom: 0;
+  }
+
+  .message__text {
+    font-size: 2.75vw;
+    max-width: 90vw;
+    line-height: 5.5vw;
+  }
+
+  .lamp {
+    top: 7vw;
+  }
+
+  .cable {
+    height: 22vw;
+  }
+
+  .cover {
+    width: 27vw;
+    height: 12vw;
+  }
+
+  .in-cover {
+    height: 10vw;
+    max-width: 16.5vw;
+  }
+
+  .in-cover .bulb {
+    width: 16vw;
+    height: 10vw;
+  }
+
+  .light {
+    width: 27vw;
+    top: 31vw;
+    border-bottom: 210vw solid rgb(44 255 255 / 24%);
+    border-left: 13vw solid transparent;
+    border-right: 13vw solid transparent;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(35deg);
+    }
+
+    50% {
+      transform: rotate(-35deg);
+    }
+
+    100% {
+      transform: rotate(35deg);
+    }
+  }
+}

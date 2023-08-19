@@ -1,0 +1,323 @@
+.outer_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 0rem;
+}
+
+.ImgContainer {
+    margin-top: 5rem;
+    height: 20rem;
+    width: 20rem;
+    box-shadow: 0px 7px 155px #4871ecd9;
+    border-radius: 1.2vw;
+}
+
+.ImgContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1.2vw;
+}
+
+.info {
+    width: 65%;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background-color: rgb(53, 62, 70);
+    padding: 1.5rem;
+}
+
+.textcont {
+    width: 90%;
+    margin-left: 3%;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: pre-line;
+}
+
+
+.button {
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.button button {
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    color: #03e9f4;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 0.15rem;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background: #03e9f4;
+    color: black;
+    border-radius: 0.3125rem;
+    transform: scale(1.15);
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 20px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 150px #03e9f4;
+    -webkit-box-reflect: below 3px linear-gradient(transparent, #0005);
+}
+
+.button button span {
+    position: absolute;
+    display: block;
+}
+
+.button button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.125rem;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.button button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.125rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.button button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.125rem;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.button button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.125rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.button .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width:1025px) and (max-width: 1200px) {
+
+    .outer_container {
+        gap: 3vw;
+        padding: 6vw 0;
+        height: 120vw;
+    }
+
+    .ImgContainer {
+        margin: 10vw 0 6vw 0;
+        padding: 0;
+        height: 30vw;
+        width: 30vw;
+    }
+
+    .info {
+        width: 80vw;
+        font-size: 2vw;
+    }
+
+    .textcont {
+        width: 75vw;
+        padding: 3vw 1vw 3vw 1vw;
+    }
+
+    .button {
+        margin-left: 3vw;
+        padding-bottom: .2vw;
+    }
+
+    .button button {
+        font-size: 2vw;
+        letter-spacing: 0.5vw;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .outer_container {
+        gap: 6vw;
+        padding: 6vw 0;
+        height: 130vw;
+
+    }
+    .ImgContainer {
+        margin: 10vw 0 6vw 0;
+        padding: 0;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .info {
+        width: 85vw;
+        font-size: 2vw;
+    }
+
+    .textcont {
+        width: 80vw;
+        padding: 3vw;
+        padding-bottom: 3vw;
+    }
+    .button {
+        margin-left: 2vw;
+        padding-bottom: .1vw;
+    }
+    .button button {
+        font-size: 2vw;
+        letter-spacing: 0.5vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .outer_container {
+        gap: 6vw;
+        padding: 6vw 0;
+        height: 150vw;
+
+    }
+    .ImgContainer {
+        margin: 10vw 0 6vw 0;
+        padding: 0;
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .info {
+        width: 80vw;
+        font-size: 2.5vw;
+    }
+
+    .textcont {
+        width: 70vw;
+        padding: 2vw;
+        padding-bottom: 3vw;
+    }
+
+    .button {
+        margin-left: 2vw;
+        padding-bottom: .1vw;
+    }
+
+    .button button {
+        font-size: 2vw;
+        letter-spacing: 0.09vw;
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .outer_container {
+        gap: 0vh;
+        padding: 14vw 0vh;
+        height: 140vw;
+    }
+
+    .ImgContainer {
+        margin: 10vw 0 6vw 0;
+        padding: 0;
+        height: 40vw;
+        width: 40vw;
+        margin: 3vw ;
+    }
+
+    .info {
+        width: 70vw;
+        font-size: 2.5vw;
+        margin-top: 5vw;
+    }
+
+    .textcont {
+        width: 69vw;
+        padding: 0vw;
+        padding-bottom: 3vw;
+    }
+
+    .button {
+        margin-left: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .button button {
+        font-size: 2vw;
+        letter-spacing: 0.09vw;
+        padding: 2vw;
+    }
+}

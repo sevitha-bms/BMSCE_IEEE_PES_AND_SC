@@ -1,0 +1,264 @@
+:root {
+    --card-height: 45vw;
+    --card-width: 45vw;
+    --bg: 25 28 41;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.outer_container{
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:3vw;
+}
+
+.section{
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    padding-bottom: 2.2vw;
+    gap: 8vw;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 4.7vw;
+    padding-top: 3.2vw;
+    font-family: "Source Sans Pro", sans-serif;
+    animation: glow 2500ms linear infinite 100ms;
+}
+
+.cards {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 5.2vw;
+    gap: 6vw;
+}
+
+.card_container {
+    position: relative;
+    width: 23vw;
+    height: 23vw;
+}
+
+.card_container:hover>.magic_card {
+    cursor: pointer;
+}
+
+.outer_container>div:first-child{
+    border-top: 0;
+}
+
+.magic_card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(20deg);
+    animation: rot 2s infinite ease;
+}
+
+.magic_card img {
+    border-radius: 1.2vw;
+}
+
+.magic_card::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(1);
+    filter: blur(calc(var(--card-height) /6));
+    background-image: linear-gradient(var(--rotate),
+            #0abdee9b,
+            #6c8ef5a5 43%,
+            #0abdee9b);
+}
+
+.magic_card:hover {
+    border-radius: 1rem;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    transform: rotateY(0deg);
+    animation: none ease-out 2s;
+    opacity: 1;
+    box-shadow: 0px 0px 30px 1px #0055ffbe;
+}
+
+
+.magic_card_front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    background-color: rgb(var(--bg));
+    border-radius: 1.2vw;
+
+}
+
+.magic_card_front img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes glow {
+    0% {
+        color: #A5D7E8;
+    }
+
+    40% {
+        text-shadow: 0px 0px 16px white;
+    }
+
+    100% {
+        color: #A5D7E8;
+    }
+}
+
+
+@keyframes rot {
+    0% {
+        transform: rotateX(-15deg) translateY(0px)perspective(800px) rotateY(20deg);
+    }
+
+    50% {
+        transform: rotateX(-15deg) translateY(-10px)perspective(800px) rotateY(20deg);
+    }
+
+    100% {
+        transform: rotateX(-15deg) translateY(0px)perspective(800px) rotateY(20deg);
+    }
+}
+
+@media(max-width:480px){
+    :root{
+        --card-height: 100vw;
+        --card-width: 100vw;
+    }
+
+    .section{
+        min-height: auto;
+        padding-top: 10vw;
+        gap: 20vw;
+        padding-bottom: 13vw;
+    }
+
+    .heading{
+        font-size: 12vw;
+    }
+
+    .cards{
+        gap: 9vw;
+    }
+
+    .card_container{
+        width: 40vw;
+        height:40vw;
+    }
+}
+
+@media(min-width:481px) and (max-width:768px){
+    :root{
+        --card-height: 70vw;
+        --card-width: 70vw;
+    }
+
+    .section{
+        min-height: auto;
+        padding-top: 8vw;
+        padding-bottom: 15vw;
+        gap: 14vw;
+    }
+
+    .heading{
+        font-size: 9vw;
+    }
+
+    .cards{
+        gap: 9vw;
+    }
+
+    .card_container{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px){
+    :root{
+        --card-height: 60vw;
+        --card-width: 60vw;
+    }
+
+
+    .section{
+        min-height: auto;
+        padding-top: 8vw;
+        padding-bottom: 15vw;
+        gap: 14vw;
+    }
+
+    .heading{
+        font-size: 7vw;
+    }
+
+    .cards{
+        gap: 7vw;
+    }
+
+    .card_container{
+        width: 32vw;
+        height: 32vw;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1200px){
+
+    :root{
+        --card-height: 55vw;
+        --card-width: 55vw;
+    }
+
+    .section{
+        min-height: auto;
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+        gap: 11vw;
+    }
+
+    .heading{
+        font-size: 6vw;
+    }
+
+    .cards{
+        gap: 5vw;
+    }
+
+    .card_container{
+        width: 26vw;
+        height: 26vw;
+    }
+}

@@ -1,0 +1,292 @@
+.outer_container {
+    position: relative;
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pattern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--font-color);
+    font-weight: 300;
+    gap: 3rem;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.message1{
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+.buttons button {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.625rem 0.65rem;
+    color: #03e9f4;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 0.15rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #03e9f4;
+    color: black;
+    border-radius: 0.3125rem;
+    transform: scale(1.15);
+    translate: 2.5rem 0;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 20px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 150px #03e9f4;
+        -webkit-box-reflect:below 3px linear-gradient(transparent, #0005);
+}
+
+.buttons button span {
+    position: absolute;
+    display: block;
+}
+
+.buttons button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 0.125rem;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.buttons button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 0.125rem;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.buttons button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 0.125rem;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.buttons button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 0.125rem;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.buttons .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Polygon-1,
+#Polygon-2,
+#Polygon-3,
+#Polygon-4,
+#Polygon-4,
+#Polygon-5 {
+    animation: float 1s infinite ease-in-out alternate;
+}
+
+#Polygon-2 {
+    animation-delay: .2s;
+}
+
+#Polygon-3 {
+    animation-delay: .4s;
+}
+
+#Polygon-4 {
+    animation-delay: .6s;
+}
+
+#Polygon-5 {
+    animation-delay: .8s;
+}
+
+@keyframes float {
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .outer_container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 1.5vw;
+        margin-right:1vw;
+      }
+    .pattern{
+        scale: 0.6;
+        height: 60vw;
+    }
+    .message_box {
+      gap: 2vh;
+    }
+  
+    .message1 {
+      font-size: 4vw;
+      padding-left:2vw ;
+    }
+
+    .buttons{
+        padding-left:2vh;
+    }
+
+    .buttons button {
+      font-size: 2vh;
+    }
+  }
+
+  @media (min-width:481px)and (max-width:768px) {
+    .outer_container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 1.5vw;
+        margin-right:1vw;
+    }
+    .pattern{
+        scale: 0.7;
+        height: 60vw;
+    }
+
+    .buttons .wrapper {
+      flex-direction: column;
+    }
+
+    .message_box {
+        gap: 3vh;
+      }
+    
+    .message1 {
+        font-size: 3vw;
+        padding-left:3vw ;
+      }
+
+    .buttons{
+        padding-left:2vh;
+    }  
+  
+    .buttons button {
+        font-size: 2.5vw;
+    }
+  }
+
+  @media (min-width:769px) and (max-width:1024px) {
+    .outer_container {
+      width: 100%;
+      margin-left: 0;
+      flex-direction: column;
+      padding-top: 8vw;
+    }
+    .message1{
+        font-size:2.5vw;
+        padding-left:2vh;
+    }
+    .buttons{
+        padding-left:2vh;
+        padding-bottom: 2vw;
+    }
+    .buttons button {
+        font-size: 2vw;
+    }
+  }  
+
+  @media (min-width:1025px) and (max-width:1200px){
+    .outer_container {
+      width: 100%;
+      margin-left: 1vw;
+      padding:1vh;
+    }
+    .message1{
+        font-size:2vw;
+        padding-left:3vh;
+    }
+    .buttons{
+        padding-left:3vh;
+    }
+  }
