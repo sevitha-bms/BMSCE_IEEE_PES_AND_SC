@@ -14,7 +14,7 @@ export default function Animation() {
       <div className={animeStyles.inner_container_2}>
         <div className={animeStyles.animation_1} id="lottie">
           <Player
-            src="https://res.cloudinary.com/daa1jvz4n/raw/upload/v1686734600/MISC%20IMAGES/hero_blwi1c.json"
+            src="https://res.cloudinary.com/daa1jvz4n/raw/upload/v1686823559/Animation/hero_ymht5m.json"
             background="transparent"
             speed={1}
             loop
