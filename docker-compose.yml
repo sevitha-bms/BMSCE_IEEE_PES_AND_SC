@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+
+  backend:
+    build:
+      context: ./BackEnd
+      dockerfile: Dockerfile
+    container_name: backend
+    restart: always
+    ports:
+      - 4000:4000
+    volumes:
+      - ./BackEnd:/usr/src/app
+    networks:
+      - react-express
+    command: npm run dev
+
+  web-app:
+    build: 
+      context: ./FrontEnd
+      dockerfile: Dockerfile
+    container_name: web-app
+    restart: always
+    ports:
+      - 3000:80
+    networks:
+      - react-express
+    depends_on:
+      - backend
+
+networks:
+  react-express:
+    driver: bridge
