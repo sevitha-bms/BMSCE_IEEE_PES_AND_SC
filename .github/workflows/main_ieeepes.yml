@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_cd29daba3f264a6699ab8dfe950da21c }}/ieee_pes:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./FrontEnd/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
